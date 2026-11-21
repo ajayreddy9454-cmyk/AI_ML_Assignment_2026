@@ -1,0 +1,86 @@
+Question_ID,Question,Expected_Answer,Generated_Answer,Expected_Page
+1,What are the main characteristics of trustworthy AI systems?,"Valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed.","
+The NIST AI RMF identifies seven characteristics of trustworthy AI systems:
+
+1. Valid and reliable
+2. Safe
+3. Secure and resilient
+4. Accountable and transparent
+5. Explainable and interpretable
+6. Privacy-enhanced
+7. Fair with harmful bias managed
+
+These characteristics should be balanced according to the AI system's context of use.
+
+Source: NIST AI RMF 1.0, PDF page 17.
+",17
+2,What does validation mean in the context of AI systems?,"Validation is the confirmation, through objective evidence, that requirements for a specific intended use or application have been fulfilled.","Validation in the context of AI systems is the “confirmation, through the provision of objective evidence, that the requirements for a specific intended use or application have been fulfilled” (ISO 9000:2015). It is a key component of ensuring the system is valid and reliable before deployment.  
+Source: PDF page 18.",18
+3,How does the NIST framework define accuracy?,"Accuracy is the closeness of results of observations, computations, or estimates to true values or values accepted as being true.","The NIST AI RMF defines **accuracy** as the “closeness of results of observations, computations, or estimates to the true values or the values accepted as being true” (ISO/IEC TS 5723:2022).  
+*Source: PDF page 19.*",19
+4,What is robustness or generalizability in AI?,It is the ability of a system to maintain its level of performance under a variety of circumstances.,"Robustness or generalizability is the **ability of an AI system to maintain its level of performance under a variety of circumstances** (ISO/IEC TS 5723:2022). It means the system should not only perform as expected in the conditions it was designed for, but also continue to function—while minimizing potential harms—when operating in unexpected or adversarial settings.  
+
+*Source: PDF page 19.*",19
+5,What practices improve the safe operation of AI systems?,"Responsible design, development and deployment; clear information to deployers; responsible decision-making by deployers and end users; and explanations and documentation of risks based on empirical evidence of incidents.","Safe operation of AI systems is improved through the following practices (Source: PDF page 19):
+
+- **Responsible design, development, and deployment practices**  
+- **Clear information to deployers on responsible use of the system**  
+- **Responsible decision‑making by deployers and end users**  
+- **Explanations and documentation of risks based on empirical evidence**  
+- **Measurement of validity, accuracy, robustness, and reliability** (to ensure trustworthiness and to recognize that certain failures can cause greater harm)  
+- **Human intervention when the AI system cannot detect or correct errors**  
+
+These practices collectively help prevent AI systems from leading to states that endanger human life, health, property, or the environment.",19
+6,What does resilience mean for an AI system?,"Resilience is the ability to withstand unexpected adverse events or changes in the environment or use, maintain functions, and degrade safely when necessary.","Resilience for an AI system is the **ability to return to normal function after an unexpected adverse event** and to withstand such events or unexpected changes in its environment. It is a form of robustness that extends beyond data provenance to include handling unexpected or adversarial use, abuse, or misuse of the model or data.  
+
+*Source: PDF page 20.*",20
+7,What is the difference between security and resilience in AI?,"Resilience is the ability to return to normal function after an unexpected adverse event. Security includes resilience and protocols to avoid, protect against, respond to, or recover from attacks.","**Difference between security and resilience in AI**
+
+- **Resilience** is the ability of an AI system to **return to normal function after an unexpected adverse event** and to **maintain its functions and structure in the face of internal or external change**, degrading safely and gracefully when necessary. It focuses on robustness and the system’s capacity to recover from disruptions.  
+- **Security** includes resilience but goes further: it encompasses **protocols to avoid, protect against, respond to, or recover from attacks** (e.g., adversarial examples, data poisoning, model or data exfiltration). A secure AI system therefore implements protection mechanisms that preserve confidentiality, integrity, and availability against unauthorized access or use.
+
+*Source: PDF Page 20*",20
+8,What does transparency mean in trustworthy AI?,Transparency reflects the extent to which information about an AI system and its outputs is available to individuals interacting with the system.,"Transparency in trustworthy AI means making information about an AI system and its outputs available to anyone interacting with it—regardless of whether they realize they are doing so.  It involves providing appropriate levels of detail that are tailored to the stage of the AI lifecycle and to the role or knowledge of the individual, covering design decisions, training data, model structure, intended use cases, and how and when the system is applied.  This “meaningful transparency” increases confidence in the system and is a prerequisite for accountability.  
+
+**Sources:** PDF pages 17 and 20.",20
+9,What is explainability in AI?,Explainability refers to a representation of the mechanisms underlying AI systems' operation.,"Explainability in AI is a representation of the mechanisms that underlie how an AI system operates, enabling users to understand why the system behaves the way it does.  
+*Source: NIST AI RMF 1.0, Source PDF Page 21*",21
+10,How are interpretability and explainability different?,"Explainability describes how an AI system operates, whereas interpretability refers to the meaning of its output in the context of its designed functional purposes.","Explainability is a description of the internal mechanisms that drive an AI system’s operation, while interpretability is the meaning of the system’s output in the context of its intended purpose.  
+(Source: PDF page 21 for the definition of explainability and interpretability; PDF page 22 for the discussion of interpretability risks.)",21
+11,What does privacy mean in the NIST AI Risk Management Framework?,"Privacy refers to norms and practices that safeguard human autonomy, identity, and dignity, including freedom from intrusion and control over disclosure of personal information.","In the NIST AI Risk Management Framework, **privacy** is treated as a core risk domain that protects human autonomy, identity, and dignity. It is guided by privacy values such as **anonymity, confidentiality, and control**, and it requires that AI systems be designed, developed, and deployed in ways that:
+
+* prevent unwanted intrusion or observation,
+* give individuals agency to consent to disclosure or control of aspects of their identity (body, data, reputation),
+* mitigate new privacy risks that arise from inference or identification of private information.
+
+Privacy is considered alongside security, bias, and transparency, and is addressed through the same risk‑management processes used for other AI trustworthiness characteristics. Organizations may use existing NIST frameworks (e.g., the NIST Privacy Framework, Cybersecurity Framework, Risk Management Framework, Secure Software Development Framework) to reduce privacy and cybersecurity risks.  
+
+**Sources:** Page 22 and Page 44.",22
+12,How can privacy-enhancing technologies support AI systems?,Privacy-enhancing technologies and data-minimizing methods such as de-identification and aggregation can support the design of privacy-enhanced AI systems.,"Privacy‑enhancing technologies (PETs) can support AI systems by:
+
+* **Reducing privacy risks** – PETs such as de‑identification and aggregation of model outputs limit the ability of an AI system to infer or reveal individuals’ private information.  
+* **Enabling privacy‑oriented design** – By incorporating PETs during design, development, and deployment, AI systems can be built to respect privacy values such as anonymity, confidentiality, and control.  
+* **Safeguarding human autonomy and dignity** – PETs help protect individuals’ freedom from intrusion, limit observation, and give people agency over the disclosure or control of aspects of their identity (body, data, reputation).  
+* **Balancing trade‑offs** – While PETs can improve privacy, they may also reduce accuracy, especially in data‑sparse situations, which can affect fairness and other values.
+
+These points are drawn from **PDF Page 22** of the NIST AI Risk Management Framework 1.0.",22
+13,What does fairness in AI include?,Fairness includes concerns for equality and equity by addressing harmful bias and discrimination.,Fairness in AI includes concerns for equality and equity by addressing issues such as harmful bias and discrimination【Source PDF Page 22】.,22
+14,What are the four functions of the NIST AI RMF Core?,"GOVERN, MAP, MEASURE, and MANAGE.","The NIST AI RMF Core is built around four functions:
+
+1. **GOVERN**  
+2. **MAP**  
+3. **MEASURE**  
+4. **MANAGE**  
+
+These functions are described on **Page 25** and reiterated on **Page 8** of the NIST AI RMF 1.0 document.",25
+15,What is the role of the GOVERN function?,"GOVERN is a cross-cutting function infused throughout AI risk management that enables the other functions and supports policies, organizational risk culture, and accountability.","The GOVERN function **cultivates and implements a culture of risk management** for AI systems and establishes the policies, processes, procedures, and organizational structures needed to:
+
+* anticipate, identify, and manage AI risks across the entire lifecycle  
+* ensure legal and regulatory requirements are understood, managed, and documented  
+* integrate the characteristics of trustworthy AI into organizational practices  
+* define and differentiate roles and responsibilities for human‑AI team configurations and oversight  
+* support decision‑making that is informed by a diverse, multidisciplinary team  
+
+These activities are described in the NIST AI RMF Playbook and summarized in Table 1 of the framework.  
+
+**Source pages:** 26, 27, 28, 46.",27
